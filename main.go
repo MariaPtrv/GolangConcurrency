@@ -1,7 +1,7 @@
 package main
 
 import (
-	"concurrency/rangeChannelSelect"
+	"concurrency/atomics"
 	"fmt"
 )
 
@@ -25,5 +25,8 @@ func main() {
 
 	//concurMapBuffChannelv2.ConcurMapBuffChannel()
 	//mapRWMutex.MapRWMutex()
-	rangeChannelSelect.RangeChannelSelect()
+
+	//rangeChannelSelect.RangeChannelSelect()
+	//atomics.AddAtomic()
+	atomics.CompareAndSwapAtomic()
 }
